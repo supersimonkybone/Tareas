@@ -1,0 +1,11 @@
+function calcularHipotenusa(cat1, cat2) {
+  let cateto1_cuadrado = cat1 * cat1;
+  let cateto2_cuadrado = cat2 * cat2;
+  let hipotenusa_cuadrado = cat1_cuad + cat_cuad;
+
+  let hipotenusa = Math.sqrt(hip_cuad);
+
+  return hip;
+}
+let hip = calcularHipotenusa(cat1, cat2);
+console.log("La hipotenusa es: " + hip);

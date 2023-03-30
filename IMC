@@ -1,0 +1,7 @@
+function calcularIMC(peso, altura) 
+{ altura = altura / 100;
+  let imc = peso / (altura * altura);
+  return imc.toFixed(2);}
+
+let imc = calcularIMC(peso, altura);
+console.log("Tu IMC es: " + imc);

@@ -1,0 +1,50 @@
+ let operando1 = '';
+    let operando2 = '';
+    let operacion = '';
+    let resultado = '';
+
+    function agregarNumero(numero) {
+      if (operacion === '') {
+        operando1 += numero;
+        actualizarPantalla(operando1);
+      } else {
+        operando2 += numero;
+        actualizarPantalla(operando2);
+      }
+    }
+
+    function agregarDecimal() {
+      if (operacion === '' && !operando1.includes('.')) {
+        operando1 += '.';
+        actualizarPantalla(operando1);
+      } else if (operacion !== '' && !operando2.includes('.')) {
+        operando2 += '.';
+        actualizarPantalla(operando2);
+      }
+    }
+
+    function operar(op) {
+      operacion = op;
+    }
+
+    function calcular() {
+      let num1 = parseFloat(operando1);
+      let num2 = parseFloat(operando2);
+
+      switch (operacion) {
+        case '+':
+          resultado = num1 + num2;
+          break;
+        case '-':
+          resultado = num1 - num2;
+          break;
+        case '*':
+          resultado = num1 * num2;
+          break;
+        case '/':
+          resultado = num1 / num2;
+          break;
+      }
+
+      actualizarPantalla(resultado);
+      operando1}
